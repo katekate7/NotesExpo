@@ -15,14 +15,13 @@ const NotFound = () => {
   );
 };
 
-// Styles
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Take up full space
-    justifyContent: 'center', // Center content vertically
-    alignItems: 'center', // Center content horizontally
-    opacity: 0.5, // Reduced opacity for a faded effect
-    zIndex: -1, // Render behind other components
+    flex: 1,
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    opacity: 0.5, 
+    zIndex: -1, 
   },
 });
 

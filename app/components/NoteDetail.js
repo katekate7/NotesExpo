@@ -9,7 +9,7 @@ import NodeInputModel from './NodeInputModel';
 import { useMontserrat } from '../components/context/montserrat'
 
 
-// Function to format date
+// Function to format date into normal variant
 const formatDate = ms => {
     const date = new Date(ms);
     const day = date.getDate();
@@ -90,10 +90,10 @@ const NoteDetail = (props) => {
         await AsyncStorage.setItem('notes', JSON.stringify(newNotes));
     };
     
-    // Function to close modal
+    // Function to close modal(Form)
     const handleOnClose = () => setShowModal(false);
     
-    // Function to open edit modal
+    // Function to open edit modal(Form)
     const openEditModal = () => {
         setIsEdit(true);
         setShowModal(true);
@@ -141,10 +141,9 @@ const NoteDetail = (props) => {
     );
 }
 
-// Styles
 const styles = StyleSheet.create({
     container:{
-         paddingHorizontal: 15, // Horizontal padding
+         paddingHorizontal: 15, 
     },
     title:{
         fontSize: 30,
@@ -170,12 +169,12 @@ const styles = StyleSheet.create({
         fontFamily: 'Montserrat_400Regular'
     },
     btnContainer: {
-        position: 'absolute', // Position absolute
-        right: 15, // Align right
-        bottom: 50, // Offset from bottom
+        position: 'absolute', 
+        right: 15,
+        bottom: 50, 
     },
     text: {
-        color: '#F45B69', // Text color
+        color: '#F45B69', 
         fontFamily: 'Montserrat_400Regular'
     }
 });
